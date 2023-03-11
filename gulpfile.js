@@ -5,7 +5,7 @@ var concat = require('gulp-concat');
 sass.compiler = require('node-sass');
 gulp.task('sass', function () {
    return gulp.src('./src/**/*.scss')
-   .pipe(concat('custom.scss'))
+   .pipe(concat('style.scss'))
    .pipe(sass().on('error', sass.logError))
    .pipe(gulp.dest('./dist/'));
 });
